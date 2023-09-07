@@ -1,9 +1,7 @@
 const express = require("express");
-const ejs = require('ejs');
+const fetch = require('node-fetch');
 require("dotenv").config({path : "./data/config.env"});
 const app = express();
-
-app.set('view engine', 'ejs');
 
 app.use(express.static("public"));
 app.use(express.json());
